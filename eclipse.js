@@ -1,10 +1,26 @@
-const moon = document.querySelector('.moon')
-body = document.querySelector('.body')
+moon = document.querySelector('.moon')
+screen = document.querySelector('.screen')
 sun = document.querySelector('.sun')
+html = document.querySelector('.html')
 
-mySelect.addEventListener('mouseover', function(e) {
-    // Данный элемент нужно выделить с помощью класса "highlight".
-    if(e.target.tagName === 'OPTION') e.target.classList.add('highlight');
-  })
+moon.addEventListener('click',function(){
+  screen.style.background = 'black'
+  //   anime({
+  //     targets: '.screen',
+  //     color:'#fff',
+  //     background: "hsl(0°, 0%, 100%)",
+  //     duration: 2000,
+  //     // delay: 1000,
+  // });
+})
 
-
+// setTimeout(function(){
+  // screen.style.background = 'white'
+  // anime({
+  //   targets: '.screen',
+  //   color:'#fff',
+  //   background: "hsl(0°, 0%, 100%)",
+  //   duration: 2000,
+  //   // delay: 1000,
+  // })
+// },2000)
