@@ -1,14 +1,31 @@
-.body{
-    /* background-color: black; */
+.html{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
+}
+.screen{
+    background: black;
+    /* background-color: white; */
+    /* background: radial-gradient(orange,skyblue); */
+    animation-name: moonrise;
+    /* animation-duration: 2s; */
+    /* animation-delay: 2s; */
+    animation: moonrise 4s ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
     background: radial-gradient(skyblue 10%, black);
-    /* background: black; */
     /* padding-top: 100%; */
-    background-size: cover;
+    /* background-size: cover;
     background-attachment: fixed;
     background-position: center center;
-    background-repeat: no-repeat;
-    padding-left: 100%;
+    background-repeat: no-repeat; */
+    /* padding-left: 100%; */
     transition: 1s;
+    width: 1920px;
+    height: 1080px;
+    position: relative;
+    left: -8px;
+    top: -8px;
 }
 .highlight { background-color: black;}
 .sun{
@@ -56,8 +73,9 @@
 }
 
 .moon:hover > .body{
-    background: radial-gradient(black, darkgray);
-    background: black;
+    
+    /* background: radial-gradient(black, darkgray); */
+    /* background-color: black; */
     transition: 4s;
 }
 .moon:hover{
@@ -65,3 +83,13 @@
     opacity: 1;
     transition: .1s;
 }
+/* @keyframes */
+/* @keyframes moonrise{
+        0%{
+            background-color: white;
+        }
+        100%{
+            background-color:black;
+        }
+        
+    } */
